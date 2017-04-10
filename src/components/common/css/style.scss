@@ -1,0 +1,66 @@
+@import "color-theme";
+@font-face {
+  font-family: 'iconfont';
+  src: url('//at.alicdn.com/t/font_1476180127_2466838.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_1476180127_2466838.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_1476180127_2466838.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/font_1476180127_2466838.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_1476180127_2466838.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// 公共样式
+#app {
+  display: flex;
+  width: 100%;
+  background-color: $bg_color;
+  color: $ft_color;
+}
+
+.page{
+  flex: 1;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+  animation: animate-in .6s;
+}
+.slide-fade-leave-active {
+  animation: animate-out .6s;
+}
+@keyframes animate-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes animate-out {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+.fade-leave-active{
+  animation: animate-out .6s;
+}
